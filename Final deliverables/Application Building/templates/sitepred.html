@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <link rel="shortcut icon" href="{ }">
+  <title>Prediction of Phishing Site</title>
+  <link rel='stylesheet' href='https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css'>
+  <link rel=stylesheet type=text/css href="{{ url_for('static', filename='css/stylePredict.css') }}">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="container">
+
+  <header>
+    <h2><a href="/"><img src="{{ url_for('static', filename='images/analysis.png') }}" alt="img" height="50" width="50"></a></h2>
+    <nav>
+      <ul>
+        <li>
+          <a href="/" title="Hotels">Home</a>
+        </li>
+        <li>
+          <a href="/about" title="Flights">ABOUT</a>
+        </li>
+        <li>
+          <a href="#" title="Tours">FAQ's</a>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="cover">
+    <h1 style="color:rgb(186, 198, 21)">{{ result }}</h1><!--Provide URL for Prediction-->
+ 
+    <div class="card-body">
+        <a href="/predict" class="btn btn-primary stretched-link">Predict Another URL</a>
+      </div>
+ 
+ 
+    <!-- <a href="/predict" style="">Enter Another URL</a> -->
+    <!-- <button><a href="/predcit">Enter Another Site</a></button> -->
+    <!-- <form  class="flex-form" method="post" action="/predict"> -->
+      <!-- <label for="from"> -->
+        <!-- <i class="ion-link"></i> -->
+      <!-- </label> -->
+      <!-- <input type="text" placeholder="Enter a URL" name="URL" style="width:360px"> -->
+      <!-- <h1>{{result}}</h1> -->
+    <!-- </form> -->
+  </div>
+
+</div>
+<!-- partial -->
+  
+</body>
+</html>
